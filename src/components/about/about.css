@@ -1,0 +1,229 @@
+.about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.image_layer {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  justify-self: center;
+  perspective: 1000px;
+}
+
+.subject_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateZ(0) translateY(0) scale(1);
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.scroll-animated {
+  transform: translateZ(50px) translateY(-20px) scale(1.05) rotateX(-3deg);
+  filter: drop-shadow(0 10px 20px rgba(149, 73, 73, 0.4));
+}
+
+.about_info {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  gap: 0.5rem;
+  margin-bottom: var(--mb-2);
+}
+.about_box {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1.75rem 1.5rem;
+}
+
+.about_icon {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-5);
+}
+.about_title {
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-medium);
+}
+.about_subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+}
+.about_description {
+  padding: 0 4rem 0 0;
+  margin-bottom: var(--mb-2-5);
+}
+.about_link {
+  text-decoration: none;
+  color: rgb(23, 10, 68);
+}
+.about_link:hover {
+  text-decoration: underline;
+}
+.button-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ========== Resume Preview Overlay ========== */
+.resume-viewer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.resume-preview-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ========== Fixed Buttons ========== */
+.fixed-left,
+.fixed-right {
+  position: fixed;
+  top: 1.25rem;
+  z-index: 10000;
+  background: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #5c2f2f;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.fixed-left {
+  right: 4.5rem;
+}
+
+.fixed-right {
+  right: 1.25rem;
+}
+
+.fixed-left:hover,
+.fixed-right:hover {
+  background-color: #f2f2f2;
+}
+
+/* ========== Responsive Breakpoints ========== */
+@media screen and (max-width: 992px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .subject_img {
+    width: 220px;
+  }
+  .image_layer {
+    max-width: 200px;
+  }
+
+  .about_box {
+    padding: 0.75rem 0.5rem;
+  }
+  .about_data {
+    text-align: center;
+  }
+  .about_info {
+    justify-content: center;
+  }
+  .about_description {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .resume-preview-wrapper {
+    width: 80%;
+    height: 90%;
+  }
+
+  .fixed-left,
+  .fixed-right {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume-preview-wrapper {
+    width: 95%;
+    height: 80%;
+    padding: 0.5rem;
+  }
+
+  .resume-iframe {
+    width: 70%;
+    height: 90%;
+  }
+
+  .fixed-left,
+  .fixed-right {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    top: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about_info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_description {
+    padding: 0;
+  }
+  .image_layer {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about_info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image_layer {
+    max-width: 170px;
+  }
+}
