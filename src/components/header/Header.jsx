@@ -29,7 +29,10 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="/" className="nav_logo">
+        <a
+          href="https://itsvee0120.github.io/violet-website/"
+          className="nav_logo"
+        >
           Violet Nguyen
         </a>
 
