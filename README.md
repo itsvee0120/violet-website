@@ -21,6 +21,7 @@ Check it out live here: [https://your-portfolio-link.com](https://your-portfolio
 - Active section highlighting
 - Clean, grid-based layout
 - Easy to customize and extend
+- Responsive across devices
 
 ## 📦 Installation
 
