@@ -4,7 +4,7 @@ Welcome to the source code for my personal portfolio website built with **React.
 
 ## 🚀 Live Demo
 
-Check it out live here: [https://your-portfolio-link.com](https://your-portfolio-link.com)
+Check it out live here: [https://itsvee0120.github.io/violet-website/](https://itsvee0120.github.io/violet-website/)
 
 ## 🛠️ Built With
 
