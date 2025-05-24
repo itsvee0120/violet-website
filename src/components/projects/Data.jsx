@@ -8,7 +8,7 @@ export const projects = [
     image: image1,
     description: "Built with React to showcase my skills and projects.",
     tags: ["React"],
-    link: "#home",
+    link: "https://github.com/itsvee0120/violet-website",
   },
   {
     title: "Barcode & QR code Generator",
