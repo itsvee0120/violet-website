@@ -30,6 +30,7 @@
 }
 
 .project_card {
+  cursor: pointer;
   background: white;
   border-radius: 16px;
   overflow: hidden;
