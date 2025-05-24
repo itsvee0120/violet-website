@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/violet-website/static/css/main.0b97c853.css",
+    "main.js": "/violet-website/static/js/main.34c6fe5d.js",
+    "static/js/453.d1b341a7.chunk.js": "/violet-website/static/js/453.d1b341a7.chunk.js",
+    "static/media/Violet_transparent.png": "/violet-website/static/media/Violet_transparent.9527861f04a369f7ae1f.png",
+    "static/media/Pixar_Violet_Color.png": "/violet-website/static/media/Pixar_Violet_Color.1b7ea0092e97653f6d1d.png",
+    "static/media/sanrio.png": "/violet-website/static/media/sanrio.c4aeea3ebaf27a10fb9c.png",
+    "static/media/web1.png": "/violet-website/static/media/web1.8ab5d31fb468d1ee91d3.png",
+    "static/media/barcode.png": "/violet-website/static/media/barcode.b21037fd25b4763783cd.png",
+    "static/media/Resume.pdf": "/violet-website/static/media/Resume.6aea073679f703d08724.pdf",
+    "index.html": "/violet-website/index.html",
+    "main.0b97c853.css.map": "/violet-website/static/css/main.0b97c853.css.map",
+    "main.34c6fe5d.js.map": "/violet-website/static/js/main.34c6fe5d.js.map",
+    "453.d1b341a7.chunk.js.map": "/violet-website/static/js/453.d1b341a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b97c853.css",
+    "static/js/main.34c6fe5d.js"
+  ]
+}
