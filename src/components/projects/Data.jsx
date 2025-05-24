@@ -4,9 +4,9 @@ import image3 from "../../assets/sanrio.png";
 
 export const projects = [
   {
-    title: "React Portfolio",
+    title: "Personal Website",
     image: image1,
-    description: "Built with React and Framer Motion.",
+    description: "Built with React to showcase my skills and projects.",
     tags: ["React"],
     link: "#home",
   },
