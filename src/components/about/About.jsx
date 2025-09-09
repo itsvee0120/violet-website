@@ -10,7 +10,7 @@ const About = () => {
   const imageLayerRef = useRef(null);
 
   const resumeViewUrl =
-    "https://drive.google.com/file/d/1fFYUB77KEFsH7hQfoUmcTAAs9WISzdq3/preview";
+    "https://drive.google.com/file/d/1YKV0_obGzPjRiZclkhjSTtSFSbbha8hi/preview";
   const resumeDownloadUrl = Resume;
 
   const openResume = () => {
