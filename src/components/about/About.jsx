@@ -38,19 +38,17 @@ const About = () => {
   }, []);
 
   useEffect(() => {
-    if (!imageLayerRef.current) return;
+    const imageLayer = imageLayerRef.current;
+    if (!imageLayer) return;
 
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      // Use an array of thresholds to catch visibility changes more precisely
       threshold: [0, 0.4],
     };
 
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
-        // entry.isIntersecting is true when element crosses threshold going in viewport
-        // false when crossing threshold going out viewport
         setIsVisible(entry.isIntersecting && entry.intersectionRatio >= 0.4);
       });
     };
@@ -59,12 +57,10 @@ const About = () => {
       observerCallback,
       observerOptions
     );
-    observer.observe(imageLayerRef.current);
+    observer.observe(imageLayer);
 
     return () => {
-      if (imageLayerRef.current) {
-        observer.unobserve(imageLayerRef.current);
-      }
+      observer.unobserve(imageLayer);
     };
   }, []);
 
