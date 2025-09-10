@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./about.css";
 import Violet_transparent from "../../assets/Violet_transparent.png";
 import Info from "./Info";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/Anh Nguyen.pdf";
 
 const About = () => {
   const [showResume, setShowResume] = useState(false);
@@ -16,7 +16,7 @@ const About = () => {
   const openResume = () => {
     if (window.innerWidth <= 768) {
       window.open(
-        "https://drive.google.com/file/d/1fFYUB77KEFsH7hQfoUmcTAAs9WISzdq3/view",
+        "https://drive.google.com/file/d/1YKV0_obGzPjRiZclkhjSTtSFSbbha8hi/view",
         "_blank"
       );
     } else {
