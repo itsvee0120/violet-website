@@ -10,8 +10,9 @@ const Blogs = () => {
           src="https://itsmevee.notion.site/ebd/87f59d6321124cbd9ec6b64d321f3932?v=1acc45e4348d8043baea000c1b13756b"
           width="100%"
           height="540"
-          frameborder="0"
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
+          title="Notion blog embed"
         />
       </div>
     </section>
