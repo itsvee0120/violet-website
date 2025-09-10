@@ -3,27 +3,35 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Trigger on pushes to main branch
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "20"
+
       - name: Install dependencies
         run: npm install
+
+      - name: Fix react-scripts permissions
+        run: chmod +x node_modules/.bin/react-scripts
+
       - name: Build project
         run: npm run build
         env:
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+
       - name: Remove gh-pages cache
         run: rm -rf node_modules/.cache/gh-pages
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
