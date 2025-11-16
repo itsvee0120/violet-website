@@ -23,6 +23,13 @@ const Frameworks = () => {
               <h3 className="skills_name">Next.js</h3>
             </div>
           </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Expo Go</h3>
+            </div>
+          </div>
         </div>
 
         {/* Backend Frameworks */}
@@ -33,6 +40,12 @@ const Frameworks = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills_name">Nest.js</h3>
+            </div>
+          </div>
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Expo Router</h3>
             </div>
           </div>
         </div>

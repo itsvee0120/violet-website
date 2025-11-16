@@ -20,6 +20,12 @@ const Databases = () => {
               <h3 className="skills_name">PostgreSQL</h3>
             </div>
           </div>
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Supabase</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>

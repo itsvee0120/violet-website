@@ -1,6 +1,7 @@
 import image1 from "../../assets/web1.png";
 import image2 from "../../assets/barcode.png";
 import image3 from "../../assets/sanrio.png";
+import image4 from "../../assets/Dashboard.jpg";
 
 export const projects = [
   {
@@ -9,6 +10,14 @@ export const projects = [
     description: "Built with React to showcase my skills and projects.",
     tags: ["React"],
     link: "https://github.com/itsvee0120/violet-website",
+  },
+  {
+    title: "Houreum - Time Bank",
+    image: image4,
+    description:
+      "Houreum Time Bank App – Track, exchange, and manage time-based tasks using React Native and Supabase.",
+    tags: ["Expo Go", "React Native", "Supabase"],
+    link: "https://github.com/itsvee0120/time-bank",
   },
   {
     title: "Barcode & QR code Generator",
