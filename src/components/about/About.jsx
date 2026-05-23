@@ -10,14 +10,14 @@ const About = () => {
   const imageLayerRef = useRef(null);
 
   const resumeViewUrl =
-    "https://drive.google.com/file/d/16EIXjS4PJ4S7i1pc-8Xrg7T6LlSKidcg/preview";
+    "https://drive.google.com/file/d/1V--R87_Jbsfm1brdpeC6HQAyhsAoijun/preview";
   const resumeDownloadUrl = Resume;
 
   const openResume = () => {
     if (window.innerWidth <= 768) {
       window.open(
-        "https://drive.google.com/file/d/16EIXjS4PJ4S7i1pc-8Xrg7T6LlSKidcg/view",
-        "_blank"
+        "https://drive.google.com/file/d/1V--R87_Jbsfm1brdpeC6HQAyhsAoijun/view",
+        "_blank",
       );
     } else {
       setShowResume(true);
@@ -55,7 +55,7 @@ const About = () => {
 
     const observer = new IntersectionObserver(
       observerCallback,
-      observerOptions
+      observerOptions,
     );
     observer.observe(imageLayer);
 
