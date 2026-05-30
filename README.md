@@ -40,8 +40,3 @@ If you'd like to get in touch:
 - LinkedIn: [violetnguyen0120](https://www.linkedin.com/in/violetnguyen0120/e)
 - GitHub: [@itsvee0120](https://github.com/itsvee0120)
 
----
-
-### 📝 License
-
-This project is open-source and available under the [MIT License](LICENSE).
