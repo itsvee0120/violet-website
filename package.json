@@ -15,8 +15,12 @@
     "pdfjs-dist": "^3.4.120",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
     "react-pdf": "^9.2.1",
+    "react-router-dom": "^7.16.0",
     "react-scripts": "5.0.1",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1",
     "web-vitals": "^2.1.4",
     "yet-another-react-lightbox": "^3.23.2"
   },

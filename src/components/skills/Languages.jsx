@@ -10,6 +10,50 @@ const Languages = () => {
           <div className="skills_data">
             <i className="bx bx-badge-check"></i>
             <div>
+              <h3 className="skills_name">Java</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">C#</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">PowerShell</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">JavaScript</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">TypeScript</h3>
+            </div>
+          </div>
+        </div>
+
+        <div className="skills_group">
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Python</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
               <h3 className="skills_name">HTML</h3>
             </div>
           </div>
@@ -24,21 +68,14 @@ const Languages = () => {
           <div className="skills_data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills_name">JavaScript</h3>
+              <h3 className="skills_name">SQL</h3>
             </div>
           </div>
 
           <div className="skills_data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills_name">Java</h3>
-            </div>
-          </div>
-
-          <div className="skills_data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills_name">Python</h3>
+              <h3 className="skills_name">MySQL</h3>
             </div>
           </div>
         </div>

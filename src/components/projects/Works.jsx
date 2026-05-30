@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { projects } from "./Data";
 
 const Works = () => {
@@ -27,10 +28,8 @@ const Works = () => {
 
       <div className="projects_grid">
         {filteredProjects.map((project, index) => (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to={`/project/${project.slug}`}
             key={index}
             className="project_card"
           >
@@ -53,7 +52,7 @@ const Works = () => {
                 ))}
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </>

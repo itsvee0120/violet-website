@@ -6,15 +6,94 @@
 
 .skills_content {
   background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 1.25rem;
   text-align: center;
-  padding: 2rem 4rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .skills_content:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Scroll reveal: briefly run the hover effect (scale + color) left to right */
+.skills_content:nth-child(1).skills_in-view {
+  animation: skills-pop-1 1.6s ease forwards;
+}
+.skills_content:nth-child(2).skills_in-view {
+  animation: skills-pop-2 1.6s ease 0.35s forwards;
+}
+.skills_content:nth-child(3).skills_in-view {
+  animation: skills-pop-3 1.6s ease 0.7s forwards;
+}
+.skills_content:nth-child(4).skills_in-view {
+  animation: skills-pop-4 1.6s ease 1.05s forwards;
+}
+
+@keyframes skills-pop-1 {
+  0% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: rgba(215, 192, 172, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
+}
+
+@keyframes skills-pop-2 {
+  0% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: rgba(172, 215, 192, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
+}
+
+@keyframes skills-pop-3 {
+  0% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: rgba(192, 172, 215, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
+}
+
+@keyframes skills-pop-4 {
+  0% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: rgba(172, 206, 215, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    background-color: var(--container-color);
+  }
 }
 
 .skills_content:nth-child(1):hover {
@@ -40,19 +119,31 @@
 }
 
 .skills_box {
+  flex: 1;
   display: flex;
   justify-content: center;
-  column-gap: 2.5rem;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.skills_subtitle {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
 }
 
 .skills_group {
   display: grid;
-  align-content: flex-start;
+  align-content: center;
   row-gap: 1rem;
 }
 
 .skills_data {
   display: flex;
+  align-items: center;
   column-gap: 0.5rem;
 }
 
@@ -64,7 +155,14 @@
 .skills_name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  line-height: 18px;
+  line-height: 1.3;
+  text-align: left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills_content.skills_in-view {
+    animation: none;
+  }
 }
 
 /*=============== BREAKPOINTS ===============*/
