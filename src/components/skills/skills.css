@@ -1,7 +1,7 @@
 .skills_container {
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 1.5rem;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .skills_content {
@@ -12,86 +12,109 @@
   padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
+  width: min(52%, 480px);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, background-color 0.3s ease,
     box-shadow 0.3s ease;
+  opacity: 0;
 }
+
+.skills_content:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.skills_content:nth-child(even) {
+  align-self: flex-end;
+}
+
 .skills_content:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
 }
 
-/* Scroll reveal: briefly run the hover effect (scale + color) left to right */
+/* Scroll reveal: slide in from alternating sides */
 .skills_content:nth-child(1).skills_in-view {
-  animation: skills-pop-1 1.6s ease forwards;
+  animation: skills-slide-left-1 1.2s ease 0s forwards;
 }
 .skills_content:nth-child(2).skills_in-view {
-  animation: skills-pop-2 1.6s ease 0.35s forwards;
+  animation: skills-slide-right-2 1.2s ease 0.2s forwards;
 }
 .skills_content:nth-child(3).skills_in-view {
-  animation: skills-pop-3 1.6s ease 0.7s forwards;
+  animation: skills-slide-left-3 1.2s ease 0.4s forwards;
 }
 .skills_content:nth-child(4).skills_in-view {
-  animation: skills-pop-4 1.6s ease 1.05s forwards;
+  animation: skills-slide-right-4 1.2s ease 0.6s forwards;
 }
 
-@keyframes skills-pop-1 {
+@keyframes skills-slide-left-1 {
   0% {
-    transform: scale(1);
+    opacity: 0;
+    transform: translateX(-48px);
     background-color: var(--container-color);
   }
   50% {
-    transform: scale(1.05);
+    opacity: 1;
+    transform: translateX(0) scale(1.03);
     background-color: rgba(215, 192, 172, 0.4);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateX(0) scale(1);
     background-color: var(--container-color);
   }
 }
 
-@keyframes skills-pop-2 {
+@keyframes skills-slide-right-2 {
   0% {
-    transform: scale(1);
+    opacity: 0;
+    transform: translateX(48px);
     background-color: var(--container-color);
   }
   50% {
-    transform: scale(1.05);
+    opacity: 1;
+    transform: translateX(0) scale(1.03);
     background-color: rgba(172, 215, 192, 0.4);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateX(0) scale(1);
     background-color: var(--container-color);
   }
 }
 
-@keyframes skills-pop-3 {
+@keyframes skills-slide-left-3 {
   0% {
-    transform: scale(1);
+    opacity: 0;
+    transform: translateX(-48px);
     background-color: var(--container-color);
   }
   50% {
-    transform: scale(1.05);
+    opacity: 1;
+    transform: translateX(0) scale(1.03);
     background-color: rgba(192, 172, 215, 0.4);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateX(0) scale(1);
     background-color: var(--container-color);
   }
 }
 
-@keyframes skills-pop-4 {
+@keyframes skills-slide-right-4 {
   0% {
-    transform: scale(1);
+    opacity: 0;
+    transform: translateX(48px);
     background-color: var(--container-color);
   }
   50% {
-    transform: scale(1.05);
+    opacity: 1;
+    transform: translateX(0) scale(1.03);
     background-color: rgba(172, 206, 215, 0.4);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateX(0) scale(1);
     background-color: var(--container-color);
   }
 }
@@ -107,6 +130,7 @@
 .skills_content:nth-child(3):hover {
   background-color: rgba(192, 172, 215, 0.4);
 }
+
 .skills_content:nth-child(4):hover {
   background-color: rgba(172, 206, 215, 0.4);
 }
@@ -160,38 +184,28 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .skills_content {
+    opacity: 1;
+  }
+
   .skills_content.skills_in-view {
     animation: none;
   }
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 992px) {
-  .skills_container {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1rem;
-  }
-}
-
-/* For medium devices */
 @media screen and (max-width: 768px) {
-  .skills_container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .skills_container {
-    grid-template-columns: 1fr;
-  }
-
   .skills_content {
+    width: 100%;
+    align-self: stretch !important;
     padding: 1.5rem;
   }
+
+  .skills_container {
+    gap: 1.5rem;
+  }
 }
 
-/* For small devices */
 @media screen and (max-width: 350px) {
   .skills_box {
     column-gap: 1.25rem;

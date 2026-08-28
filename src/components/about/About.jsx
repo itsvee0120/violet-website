@@ -10,13 +10,13 @@ const About = () => {
   const imageLayerRef = useRef(null);
 
   const resumeViewUrl =
-    "https://drive.google.com/file/d/1V--R87_Jbsfm1brdpeC6HQAyhsAoijun/preview";
+    "https://drive.google.com/file/d/1OkCWmQL_O1xiAFavyDeAHI6tyXxtzJbB/preview";
   const resumeDownloadUrl = Resume;
 
   const openResume = () => {
     if (window.innerWidth <= 768) {
       window.open(
-        "https://drive.google.com/file/d/1V--R87_Jbsfm1brdpeC6HQAyhsAoijun/view",
+        "https://drive.google.com/file/d/1OkCWmQL_O1xiAFavyDeAHI6tyXxtzJbB/view?usp=sharing",
         "_blank",
       );
     } else {
@@ -101,7 +101,7 @@ const About = () => {
           <a
             href={resumeDownloadUrl}
             className="resume-download-button fixed-left"
-            download="Violet_Anh_Nguyen_Resume.pdf"
+            download="Resume_Anh_Nguyen_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

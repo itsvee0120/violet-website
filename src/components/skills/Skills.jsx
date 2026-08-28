@@ -35,7 +35,7 @@ const Skills = () => {
     <section className="skills section" id="skills">
       <h2 className="section_title">Skills</h2>
       <span className="section_subtitle">My Technical Skill Set</span>
-      <div className="skills_container container grid" ref={containerRef}>
+      <div className="skills_container container" ref={containerRef}>
         <Languages />
         <Frameworks />
         <Databases />
