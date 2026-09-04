@@ -10,13 +10,13 @@ const About = () => {
   const imageLayerRef = useRef(null);
 
   const resumeViewUrl =
-    "https://drive.google.com/file/d/1XZgC6BpYgDWzHC_vata9ZIFN0fePJpJL/preview";
+    "https://drive.google.com/file/d/1fu3YU2o6CFItC2VTmcYA0-VdmFDT30nN/preview";
   const resumeDownloadUrl = Resume;
 
   const openResume = () => {
     if (window.innerWidth <= 768) {
       window.open(
-        "https://drive.google.com/file/d/1XZgC6BpYgDWzHC_vata9ZIFN0fePJpJL/view?usp=sharing",
+        "https://drive.google.com/file/d/1fu3YU2o6CFItC2VTmcYA0-VdmFDT30nN/view?usp=sharing",
         "_blank",
       );
     } else {
