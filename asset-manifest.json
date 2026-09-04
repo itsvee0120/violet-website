@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/violet-website/static/css/main.c2eea9e1.css",
+    "main.js": "/violet-website/static/js/main.c3b83a09.js",
+    "static/js/453.d1b341a7.chunk.js": "/violet-website/static/js/453.d1b341a7.chunk.js",
+    "static/media/Violet_transparent.png": "/violet-website/static/media/Violet_transparent.9527861f04a369f7ae1f.png",
+    "static/media/Pixar_Violet_Color.png": "/violet-website/static/media/Pixar_Violet_Color.1b7ea0092e97653f6d1d.png",
+    "static/media/sanrio.png": "/violet-website/static/media/sanrio.c4aeea3ebaf27a10fb9c.png",
+    "static/media/Dashboard.jpg": "/violet-website/static/media/Dashboard.f1b6fd501d182c7b2b58.jpg",
+    "static/media/web1.png": "/violet-website/static/media/web1.8ab5d31fb468d1ee91d3.png",
+    "static/media/barcode.png": "/violet-website/static/media/barcode.b21037fd25b4763783cd.png",
+    "static/media/web_lobby.png": "/violet-website/static/media/web_lobby.75a257c45ac1372918ab.png",
+    "static/media/Anh Nguyen.pdf": "/violet-website/static/media/Anh Nguyen.c5cb699dd68f7c1cea9d.pdf",
+    "static/media/cli_lobby.png": "/violet-website/static/media/cli_lobby.efcb90500cf083894531.png",
+    "static/media/cli_room.png": "/violet-website/static/media/cli_room.e8afd5a2bfc2791f113e.png",
+    "index.html": "/violet-website/index.html",
+    "main.c2eea9e1.css.map": "/violet-website/static/css/main.c2eea9e1.css.map",
+    "main.c3b83a09.js.map": "/violet-website/static/js/main.c3b83a09.js.map",
+    "453.d1b341a7.chunk.js.map": "/violet-website/static/js/453.d1b341a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2eea9e1.css",
+    "static/js/main.c3b83a09.js"
+  ]
+}
